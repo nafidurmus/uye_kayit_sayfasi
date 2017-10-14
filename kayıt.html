@@ -1,0 +1,73 @@
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> SpartaCoders</title>
+        <link rel="stylesheet" href="kayıt.css">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+       
+      <img id="logo" align="middle" src="sparta.png" alt="SpartaCoders Kayıt">
+        <h1>SpartaCoders Kayıt</h1>
+        
+        <fieldset>
+        
+      
+          <label>İsim:</label>
+          <input type="text" id="name" name="user_name" required >
+               
+          <label>Email:</label>
+          <input type="email" id="mail" name="user_email" required >
+
+          <label>Tel:</label>
+          <input type="tel" id="tel" name="user_tel" required >
+
+ 
+
+        <label>Cinsiyet:</label>
+         <input type="radio" name="cinsiyet" value="erkek" checked> Erkek<br>
+         <input type="radio" name="cinsiyet" value="kadın"> Kadın<br>
+         <input type="radio" name="cinsiyet" value="belirtmek istemiyorum"> belirtmek istemiyorum <br>
+         <br>
+          
+          
+        <label>Bölümünüz:</label>
+        <select required>
+          <option value="Bilgisayar Bilimi">Bilgisayar Bilimi</option>
+          <option value="Bilişim Teknolojileri">Bilişim Teknolojileri</option>
+          <option value="Elektronik Haberlerşme">Elektronik Haberlerşme</option>
+          <option value="Elektrik ve Elektronik">Elektrik ve Elektronik</option>
+          <option value="Endüstri Mühendisliği">Endüstri Mühendisliği</option>
+          <option value="Mekanik">Mekanik</option>
+          </select>
+
+            
+          <label>Kaçıncı Sınıfsınız: (1 - 4)</label>
+          <input type="range" min="1" max="4" id="period" name="user_period" required><br>
+          <br>
+
+          <label>Programla geçmişiniz :</label>
+          <select required>
+          <option value="Yok">Yok</option>
+          <option value="1 Yıl">1 Yıl</option>
+          <option value="2 Yıl">2 Yıl</option>
+          <option value="3 veya daha fazla">3 veya daha fazla</option>
+          </select>
+          
+      <br>
+    <br>
+    
+          <label>Takım:</label>
+          <input type="radio" id="yazılım" value="Yazılım" name="user_team" required><label class="light">Yazılım</label><br>
+          <input type="radio" id="pazarlama" value="Pazarlama" name="user_team" required><label class="light">Pazarlama</label><br>
+          <input type="radio" id="tasarım" value="Tasarım" name="user_team" required><label class="light">Tasarım</label> <br> 
+          <input type="radio" id="sponsor" value="Sponsor" name="user_team" required><label class="light">Sponsor</label> <br>        
+    </fieldset>
+        
+        <button type="submit">Kayıt</button>
+      </form>
+      
+    </body>
+</html>
+
